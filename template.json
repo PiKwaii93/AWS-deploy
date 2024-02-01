@@ -1,0 +1,22 @@
+{
+    "Resources": {
+      "MyEC2Instance": {
+        "Type": "AWS::EC2::Instance",
+        "Properties": {
+          "ImageId": "ami-0ecb0bb5d6b19457a",
+          "InstanceType": "t2.micro",
+          "Tags": [
+            {
+              "Key": "EC2-MNHO",
+              "Value": "EC2InstanceMT4MNHO"
+            }
+          ]
+        }
+      },
+      "S3Bucket": {
+        "Type": "AWS::S3::Bucket",
+        "Properties": {}
+      }
+    }
+  }
+  
